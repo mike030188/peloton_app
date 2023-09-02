@@ -1,9 +1,10 @@
+import HomeComp from './components/pages/Home';
 import './index.css';
 
 function App() {
   return (
     <div>
-      BRR: Initializing project!
+      <HomeComp/>
     </div>
   );
 }
