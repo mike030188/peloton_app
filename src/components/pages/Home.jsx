@@ -1,6 +1,6 @@
 import React from 'react'
 import NavbarComp from './Navbar'
-import { Container, Header, Text, WrapperImg } from '../styles/Home.style'
+import { Button, ConText, Container, Header, Text, Title, WrapperImg } from '../styles/Home.style'
 
 const HomeComp = () => {
   return (
@@ -12,6 +12,15 @@ const HomeComp = () => {
         </Header>
         <WrapperImg>
             <NavbarComp/>
+            <Title>
+              <h5>$150 off packages</h5>
+              <h1>Spring training savings</h1>
+              <p>Limited-time offer! Build strength this spring<br/>
+               with a Peloton Guide Package and get $150<br/>
+               off.**</p>
+              <Button>Shop Guide</Button>
+              <ConText style={{}}>Peloton Guide Membership separate</ConText>
+            </Title>
         </WrapperImg>
 
         

@@ -3,30 +3,31 @@ import styled from "styled-components";
 export const NavMain = styled.div`
 display: flex;
 align-items: center;
-justify-content: space-between;
 padding: 13px 32px;
 `
 export const Logo = styled.div`
-
+flex: 1;
 
 `
 export const Menu = styled.div`
 display: flex;
+flex: 4;
 align-items: center;
-justify-content: space-between;
+justify-content: space-evenly;
+font-family: Inter, sans-serif;
+font-size: 13px;
 
 button{
     display: flex;
     align-items: center;
-    color: var(--text, #373737);
-    font-size: 16px;
     line-height: normal;
+    color: #FFF;
     border: none;
     cursor: pointer;
     background-color: transparent;
 
     &:hover{
-        color: yellow;
+        color: greenyellow;
         border-radius: 5px;
         text-decoration:underline;
     }
@@ -47,14 +48,34 @@ div{
     align-items: center;
     justify-content: space-around;
 }
+
+a{
+    color: #FFF;
+    font-weight: 700;
+    line-height: 20px; /* 153.846% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    &:hover{
+        color: greenyellow;
+        border-radius: 5px;
+        text-decoration:underline;
+    }
+}
 `
 export const Icons = styled.div`
+display: flex;
+justify-content: right;
+flex: 1;
 color: #FFF;
 cursor: pointer;
 font-size: 17px;
 
-:hover{
 
+
+:hover{
+    color: greenyellow;
     transform: scale(0.98);
 
 }

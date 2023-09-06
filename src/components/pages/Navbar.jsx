@@ -17,7 +17,7 @@ const reducer = (state, action) => {
         case "showToggle2":
             return { showTread: !state.showTread };
         case "showToggle3":
-            return { showStrengh: !state.showStrengh };
+            return { showStrength: !state.showStrength };
         case "showToggle4":
             return { showRow: !state.showRow };
         case "showToggle5":
@@ -81,6 +81,8 @@ const NavbarComp = () => {
                     <h2>Bikes</h2>
                 </div>
             )}
+            <a href="/accessories" >Accessories</a>
+            <a href="/apparel" >Apparel</a>
         </Menu>
         <Icons>
             <CiLocationOn style={{fontWeight:'bolder'}}/>
