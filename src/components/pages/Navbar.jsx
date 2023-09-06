@@ -61,24 +61,34 @@ const NavbarComp = () => {
                 </div>
             )}
             <button onClick={() => {
-                dispatch({ type: "showToggle1"});
-            }}>BIKES <FaAngleDown/>
+                dispatch({ type: "showToggle3"});
+            }}>STRENGTH <FaAngleDown/>
             </button>
-            {state.showBike && (
+            {state.showStrength && (
                 <div style={{flexDirection:'column'}}>
                     <img src={bike} alt="" />
-                    <h2>Bikes</h2>
+                    <h2>Strength</h2>
                 </div>
             )}
 
             <button onClick={() => {
-                dispatch({ type: "showToggle1"});
-            }}>BIKES <FaAngleDown />
+                dispatch({ type: "showToggle4"});
+            }}>ROW <FaAngleDown />
             </button>
-            {state.showBike && (
+            {state.showRow && (
                 <div style={{flexDirection:'column'}}>
                     <img src={bike} alt="" />
-                    <h2>Bikes</h2>
+                    <h2>Row</h2>
+                </div>
+            )}
+            <button onClick={() => {
+                dispatch({ type: "showToggle5"});
+            }}>APP <FaAngleDown />
+            </button>
+            {state.showApp && (
+                <div style={{flexDirection:'column'}}>
+                    <img src={bike} alt="" />
+                    <h2>App</h2>
                 </div>
             )}
             <a href="/accessories" >Accessories</a>
